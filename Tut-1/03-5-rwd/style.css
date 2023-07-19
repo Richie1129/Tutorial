@@ -1,0 +1,47 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+header {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  list-style: none;
+  padding: 0;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+aside {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}

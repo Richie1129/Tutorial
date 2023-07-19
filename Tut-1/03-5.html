@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid 網格化布局範例</title>
+  <style>
+    body {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+    }
+    
+    header {
+      background-color: lightgray;
+      padding: 20px;
+    }
+    
+    nav ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      list-style: none;
+      padding: 0;
+    }
+    
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    aside {
+      background-color: lightgray;
+      padding: 20px;
+    }
+    
+    form {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: lightgray;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>我的網站</h1>
+    <nav>
+      <ul>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">服務</a></li>
+        <li><a href="#">聯繫我們</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <article>
+      <h2>歡迎來到我的網站</h2>
+      <h3>最新消息</h3>
+      <p>這是一則關於最新消息的文章內容。</p>
+    </article>
+    <article>
+      <h3>產品介紹</h3>
+      <p>這是一個關於我們公司產品的介紹。</p>
+    </article>
+  </section>
+
+  <aside>
+    <h3>相關鏈接</h3>
+    <ul>
+      <li><a href="#">合作夥伴</a></li>
+      <li><a href="#">常見問題</a></li>
+    </ul>
+  </aside>
+
+  <form>
+    <h3>聯繫我們</h3>
+    <label for="name">姓名：</label>
+    <input type="text" id="name" required><br>
+    
+    <label for="email">電子郵件：</label>
+    <input type="email" id="email" required><br>
+    
+    <label for="phone">電話號碼：</label>
+    <input type="tel" id="phone" required><br>
+    
+    <label for="message">訊息：</label>
+    <textarea id="message" required></textarea><br>
+    
+    <input type="submit" value="提交">
+  </form>
+
+  <footer>
+    <p>&copy; 2023 我的網站。保留所有權利。</p>
+  </footer>
+</body>
+</html>

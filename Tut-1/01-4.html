@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 多媒體範例</title>
+</head>
+<body>
+  <video id="myVideo" src="video.mp4" width="640" height="360" controls></video>
+
+  <button onclick="playVideo()">播放</button>
+  <button onclick="pauseVideo()">暫停</button>
+
+  <script>
+    var video = document.getElementById("myVideo");
+
+    function playVideo() {
+      video.play();
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+  </script>
+</body>
+</html>
